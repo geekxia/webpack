@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <title>webpack demo3</title> -->
+	<title>this a html</title>
+</head>
+<body>
+	<div id="content"></div>
+	<!-- <script src="bundle.js"></script> -->
+	
+	<p></p>
+	<div>
+		
+			publicPath:"http://geekxia.cn/"
+		
+			chunks:{"main":{"size":38,"entry":"http://geekxia.cn/js/main-61267577fdd586e01d61.js","hash":"61267577fdd586e01d61","css":[]},"a":{"size":28,"entry":"http://geekxia.cn/js/a-1cfe45a0b86667d53d35.js","hash":"1cfe45a0b86667d53d35","css":[]}}
+		
+			js:["http://geekxia.cn/js/main-61267577fdd586e01d61.js","http://geekxia.cn/js/a-1cfe45a0b86667d53d35.js"]
+		
+			css:[]
+		
+			manifest:
+		
+	</div>
+	<hr>
+	<div>
+		
+			template:"E:\\webpack\\webpack-demo1\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\webpack\\webpack-demo1\\index.html"
+		
+			filename:"a.html"
+		
+			hash:false
+		
+			inject:"body"
+		
+			compile:true
+		
+			favicon:false
+		
+			minify:false
+		
+			cache:true
+		
+			showErrors:true
+		
+			chunks:"all"
+		
+			excludeChunks:["b","c"]
+		
+			title:"this a html"
+		
+			xhtml:false
+		
+	</div>
+	<hr>
+	
+	<!-- 动态插入js脚本 -->
+	<!-- <script src="http://geekxia.cn/js/main-61267577fdd586e01d61.js"></script> -->
+	<!-- <script src="http://geekxia.cn/js/a-1cfe45a0b86667d53d35.js"></script> -->
+
+<script type="text/javascript" src="http://geekxia.cn/js/main-61267577fdd586e01d61.js"></script><script type="text/javascript" src="http://geekxia.cn/js/a-1cfe45a0b86667d53d35.js"></script></body>
+</html>

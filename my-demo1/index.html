@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <title>webpack demo3</title> -->
+	<title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+	<div id="content"></div>
+	<!-- <script src="bundle.js"></script> -->
+	
+	<p><%= htmlWebpackPlugin.options.date %></p>
+	<div>
+		<% for(var key in htmlWebpackPlugin.files){ %>
+			<%= key %>:<%= JSON.stringify(htmlWebpackPlugin.files[key]) %>
+		<% } %>
+	</div>
+	<hr>
+	<div>
+		<% for(var key in htmlWebpackPlugin.options){ %>
+			<%= key %>:<%= JSON.stringify(htmlWebpackPlugin.options[key]) %>
+		<% } %>
+	</div>
+	<hr>
+	
+	<!-- 动态插入js脚本 -->
+	<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+	<script src="<%= htmlWebpackPlugin.files.chunks.a.entry %>"></script>
+
+</body>
+</html>

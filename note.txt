@@ -1,0 +1,17 @@
+webpack --config webpack.dev.config
+webpack默认执行webpack.config.js文件
+
+webpack --config webpack.config.js --progress --display-modules --colors --display-reason
+
+entry有三种配置方式：
+1、单个入口文件时
+
+chunkhash 相当于是文件的唯一标识或版本号
+hash 是所有文件统一的标识或版本号
+
+使用html-webpack-plugin插件
+模板传参，支持ejs语法。
+npm官网-html-webpack-plugin：查看该插件所有参数及其使用说明
+
+单页面程序打包
+多页面程序打包
